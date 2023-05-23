@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 1000 1000"
+   enable-background="new 0 0 1000 1000"
+   xml:space="preserve"
+   id="svg14"
+   sodipodi:docname="injection.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"><defs
+   id="defs18" /><sodipodi:namedview
+   inkscape:document-rotation="0"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1001"
+   id="namedview16"
+   showgrid="false"
+   inkscape:zoom="0.83"
+   inkscape:cx="415.34106"
+   inkscape:cy="723.26027"
+   inkscape:window-x="-9"
+   inkscape:window-y="-9"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg14" />
+<metadata
+   id="metadata2"> Svg Vector Icons : http://www.onlinewebfonts.com/icon <rdf:RDF><cc:Work
+     rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata>
+<g
+   id="g12"
+   transform="matrix(1.1900893,0,0,1.1900893,-125.48118,0.13869221)"><g
+     transform="matrix(0.1,0,0,-0.1,0,511)"
+     id="g10"><path
+       sodipodi:nodetypes="cccccccccccscccccccccccccc"
+       d="M 6347.8,4539 6840.2,4046.6 6123,3329.3 4913.3,4539 4420.9,4046.6 5138.1,3329.3 2020.7,136.9 c 0,0 287.9592,-592.63793 490.3,-890.7 -102.7514,-185.1911 -498.9,-520.3 -498.9,-520.3 0,0 209.7853,-231.1853 342.6,-364 -364,-364 -728,-728 -1092,-1092 v -231.2 c 0,-126.3 6.4,-229.1 15,-229.1 476.7419,450.2927 824.8853,807.7853 1323.1,1306 l 364,-364 c 0,0 345.4667,345.4667 518.2,518.2 323.0904,-214.8109 935.7,-520.3 935.7,-520.3 l 3149.5,3149.6 728,-706.6 483.8,462.6 -1209.7,1209.7 725.8,725.8 481.7,-481.7 471,492.4 L 6840.1,5010 Z"
+       id="path4" /></g></g>
+</svg>

@@ -1,0 +1,33 @@
+.frozen-panel {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    justify-content: center;
+}
+
+.frozen-panel.right {
+    background-position: right;
+}
+
+.frozen-panel.left {
+    background-position: left;
+}
+
+.btn-frozen-panel {
+    min-height: 7vh;
+    border-radius: 0px;
+    width: 100%;
+    font-size: x-large;
+
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+
+    font-family: 'Big Shoulders Text';
+}

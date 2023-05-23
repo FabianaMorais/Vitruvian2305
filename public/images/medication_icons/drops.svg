@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="drops.svg"
+   id="svg14"
+   xml:space="preserve"
+   enable-background="new 0 0 1000 1000"
+   viewBox="0 0 1000 1000"
+   y="0px"
+   x="0px"
+   version="1.1"><defs
+   id="defs18" /><sodipodi:namedview
+   inkscape:current-layer="svg14"
+   inkscape:window-maximized="1"
+   inkscape:window-y="-9"
+   inkscape:window-x="-9"
+   inkscape:cy="223.37782"
+   inkscape:cx="182.45634"
+   inkscape:zoom="0.41500003"
+   showgrid="false"
+   id="namedview16"
+   inkscape:window-height="1001"
+   inkscape:window-width="1920"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0"
+   guidetolerance="10"
+   gridtolerance="10"
+   objecttolerance="10"
+   borderopacity="1"
+   bordercolor="#666666"
+   pagecolor="#ffffff"
+   inkscape:document-rotation="0" />
+<metadata
+   id="metadata2"> Svg Vector Icons : http://www.onlinewebfonts.com/icon <rdf:RDF><cc:Work
+     rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata>
+<g
+   id="g12"><g
+     id="g10"
+     transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"><path
+       sodipodi:nodetypes="ccccccccccccccccccccccccccc"
+       id="path4"
+       d="m 4794.8,4998.1 c -272.2,-76.7 -475.5,-266.5 -573.3,-536.8 -30.7,-84.4 -36.4,-187.9 -46,-891.5 l -9.6,-795.7 -46,-65.2 C 3888.9895,2520.0799 3671.3276,2572.8 3370.2,2572.8 V 2083.9 1595 H 3197.7 V 534.7 C 2832.8439,177.04241 2664.9186,-326.91145 2551.6,-815.1 l -1.9,-3182.6 c -4.0494,-341.2246 61.852,-528.8177 337.4,-736.3 h 4225.7 c 282.0314,202.3098 327.2156,392.6484 337.5,736.3 l -2,3182.6 c -199.137,542.29202 -277.8439,950.07441 -646.2,1351.6 v 1058.4 h -172.4 v 488.9 488.9 c -241.2223,7.8046 -619.406,-37.7413 -749.7,136.1 l -46,65.2 -9.6,795.7 c -9.6,753.5 -13.4,801.4 -51.8,906.9 -82.4,222.4 -268.4,414.1 -479.3,492.7 -143.8,53.7 -364.2,67.1 -498.5,28.8 z" /></g></g>
+</svg>

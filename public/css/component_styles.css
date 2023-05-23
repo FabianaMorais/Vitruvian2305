@@ -1,0 +1,227 @@
+/* hover animation for dashboard menu items */
+@-webkit-keyframes hvr-back-pulse {
+    50% {
+      background-color: var(--color-light-ui);
+    }
+  }
+  @keyframes hvr-back-pulse {
+    50% {
+      background-color: var(--color-light-ui);
+    }
+  }
+
+/* loading */
+.loading-outer-container{
+  position: relative; 
+  min-height: 50vh; 
+  width: 100%; 
+  text-align: center;
+}
+
+.translate-to-center{
+  width: 100%; 
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+
+.periodicity-toggle{
+  border: 1px solid var(--color-main);
+  background-color:transparent;
+  color: var(--color-main);
+  border-radius:50%;
+  width:23px;
+  height:23px;
+  line-height: 0.5;
+}
+
+.periodicity-toggle:hover{
+  background-color: var(--color-main);
+  color:white;
+}
+.periodicity-toggle:focus {
+  outline: 0 !important;
+}
+
+
+
+
+
+/* 
+
+new dashboard classes
+
+*/
+
+.bordered-dashboard-group{
+  border:2px solid;
+  border-radius:15px;
+}
+
+
+.text-header { 
+  color: black; 
+  text-align: center; 
+  top: 0px; 
+  width: 110px; 
+  left: 35%; 
+  position: absolute;  
+}
+
+/* new version of dashboard */
+.dashboard-button-topbar-1{
+  background: rgb(255,0,0);
+  background: -moz-linear-gradient(90deg, rgba(255,0,0,1) 33%, rgba(252,176,69,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(255,0,0,1) 33%, rgba(252,176,69,1) 100%);
+  background: linear-gradient(90deg, rgba(255,0,0,1) 33%, rgba(252,176,69,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#fcb045",GradientType=1);
+}
+
+.dashboard-button-topbar-2{
+  background: rgb(109,0,255);
+  background: -moz-linear-gradient(90deg, rgba(109,0,255,1) 0%, rgba(69,96,252,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(109,0,255,1) 0%, rgba(69,96,252,1) 100%);
+  background: linear-gradient(90deg, rgba(109,0,255,1) 0%, rgba(69,96,252,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6d00ff",endColorstr="#4560fc",GradientType=1);
+}
+
+.dashboard-button-topbar-3{
+  background: rgb(255,147,0);
+  background: -moz-linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(252,212,69,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(252,212,69,1) 100%);
+  background: linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(252,212,69,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff9300",endColorstr="#fcd445",GradientType=1);
+}
+.dashboard-button-topbar-4{
+  background: rgb(93,176,209);
+background: -moz-linear-gradient(90deg, rgba(93,176,209,1) 48%, rgba(20,224,203,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(93,176,209,1) 48%, rgba(20,224,203,1) 100%);
+background: linear-gradient(90deg, rgba(93,176,209,1) 48%, rgba(20,224,203,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5db0d1",endColorstr="#14e0cb",GradientType=1);
+}
+
+.dashboard-button-container{
+  border: 1px solid lightgray;
+  height:150px;
+  border-top:0px;
+}
+
+.dashboard-description-text{
+  color: var(--color-text-dark);
+}
+
+
+.add-user-offset-fix{
+  margin-right:-5%;
+  margin-top:-5%;
+}
+
+.dashboard-icon-content{
+  text-decoration: none;
+  color: var(--color-pop)
+}
+
+
+/* searchbar */
+.dropdown-toggle::after {
+  float: right;
+    margin-top: 8px;
+}
+
+/* patient description dashboard */
+.pat-desc-professionals-card{
+  background-color: var(--color-main-dark);
+}
+
+.pat-desc-teams-card{
+  background-color: var(--color-main-dark);
+}
+
+.pat-desc-hr-card {
+  background-color: var(--color-pop-darkest);
+  
+}
+/* container for the legend colored box in charts */
+.legend-box-container{
+  width:10px;
+  height:10px;
+  border:1px solid lightgray;
+}
+
+.chart-legend-label{
+  font-size: 0.8em;
+}
+
+
+.user-crisis-preview-container{
+  border:1px solid lightgray;
+  border-radius:5px;
+  min-height:50px;
+  cursor:pointer;
+}
+.user-crisis-view-all-container{
+  border:1px solid lightgray;
+  border-radius:5px;
+}
+
+.crisis-event-full-list-container{
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.vicon-dashboard{
+  color: var(--color-main-light);
+}
+
+.vbtn-transparent{
+  border:1px solid var(--color-text-dark);
+  border-radius:5px;
+  background-color:transparent;
+}
+
+@media (min-width: 960px) {
+  .border-left-lightgray{
+    border-left:1px solid lightgray !important;
+  }
+
+}
+@media only screen and (min-width:0px) and (max-width:959px){
+  .border-left-lightgray{
+    border: 0 solid !important
+  }
+}
+
+
+medication-left-border
+
+/* professionals card */
+.professionals-card-list{
+  background-color: transparent !important;
+}
+
+#professionals_list_group.list-group{
+  background-color: transparent !important;
+}
+#professionals_list_group .list-group-item{
+  background-color: transparent !important;
+}
+
+
+.btn.vbtn-support.active{
+  background-color: var(--color-main-light);
+  color: var(--color-text-light);
+  border-color: var(--color-main-light);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

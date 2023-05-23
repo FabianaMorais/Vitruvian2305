@@ -1,0 +1,9 @@
+site_name: "PHongo: CRUD - The Create Read Update and Delete interface for PHongo"
+repo_url: https://github.com/bjori/phongo-crud
+theme: spacelab
+pages:
+    - [index.md, Home]
+    - [usage.md, Usage]
+    - [data.md, Example data]
+extra_javascript:
+    - pretty.js

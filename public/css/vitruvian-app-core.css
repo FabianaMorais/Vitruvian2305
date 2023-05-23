@@ -1,0 +1,945 @@
+:root {
+    /* BASIC COLORS */
+    --color-light: #FFFFFF; /* Lightest color in app*/
+    --color-dark: #1F1F1F;
+    --color-clear: rgba(243, 243, 243, 0.8); /* Semi transparent color */
+    --color-light-ui: #F7F7F7; /* For UI, like a radiobutton's border or a line separator */
+    --color-ui-on: #F74F3D; /* For UI, selected radio buttons and check boxes*/
+    --color-background: #F6F4FE;
+    --color-background-app: #FFFFFF;
+
+
+    /* Text colors */
+    --color-text-light: #FFF9FD;
+    --color-text-highlight: #8D929A; /* Clickable links on hover and such */
+    --color-text-dim: #8B74D4; /* Clickable links and such */
+    --color-text-dark: #1F1F1F;
+
+
+    /* APP COLORS*/
+    --color-main-darkest: #203D54;
+    --color-main-darker: #1a4971; 
+    --color-main-dark: #2368A2;
+    --color-main: #3185c9;
+    --color-main-light: #63A2D8;
+    --color-main-lighter: #AAD4F5;
+    --color-main-lightest: #EFF8FF;
+
+    --color-support-darkest: #212934; 
+    --color-support-darker: #5F6B7A; 
+    --color-support-dark: #8895A7;
+    --color-support: #B8C4CE;
+    --color-support-light: #CFD6DE;
+    --color-support-lighter: #E1E7EC;
+    --color-support-lightest: #FFFFFF;
+    --color-support-background: #EBEBEB; /* Backgorund for "light" sections on pages */
+
+    --color-pop-darkest: #ac0000;
+    --color-pop-darker: #B71403; 
+    --color-pop-dark: #e7220d;
+    --color-pop: #F74F3D; /* NOTE: Color for illustrations */
+    --color-pop-light: #ff603c;
+    --color-pop-lighter: #FF978C;
+    --color-pop-lightest: #FFB9B2;
+
+
+    --color-positive-darkest: #145239;
+    --color-positive-darker: #197741; 
+    --color-positive-dark: #259D58;
+    --color-positive: #38C172; 
+    --color-positive-light: #74D99F;
+    --color-positive-lighter: #A8EEC1;
+    --color-positive-lightest: #E3FCEC;
+
+    --color-negative-darkest: #611818;
+    --color-negative-darker: #891B1B; 
+    --color-negative-dark: #B82020;
+    --color-negative: #DC3030; 
+    --color-negative-light: #E46464;
+    --color-negative-lighter: #F5AAAA;
+    --color-negative-lightest: #FCE8E8;
+
+    --color-attention-darkest: #5C4813;
+    --color-attention-darker: #8C6D1F; 
+    --color-attention-dark: #CAA53D;
+    --color-attention: #F4CA64; 
+    --color-attention-light: #FAE29F;
+    --color-attention-lighter: #FDF3D7;
+    --color-attention-lightest: #FFFCF4;
+
+    --color-transparent: rgb(0,0,0,0);
+    --color-see-through-light: rgba(255, 255, 255, 0.6);
+
+    --color-partner-list-gray-colorize: #7e8386;
+
+    /* APP COLORS*/
+    --color-admin: #1A4971; /* Administrators' main color */
+    --color-res: #1A4971; /* Researchers' main color */
+    --color-doc: #1A4971; /* Doctors' main color */
+    --color-care: #1A4971; /* Caregivers' main color */
+    --color-org: #1A4971; /* Organizations' main color */
+
+}
+
+/* Overrides */
+select { cursor: pointer; }
+
+body {
+    font-family: 'Roboto', Georgia, sans-serif; /* Base font for the whole app */
+    background-color: var(--color-support-lighter); /* Base background color so user never sees simple white */
+}
+
+/* BASES */
+.vstyle-background-light { /* Used in base view */
+    background: linear-gradient( to bottom, var(--color-support-lightest), var(--color-main-lightest));
+    /*background: red;
+    /* background-color: var(--color-background); */
+    color: var(--color-text-dark);
+}
+
+.vstyle-background-dark { /* Used in dark page base view */
+    background-color: var(--color-dark);
+    color: var(--color-text-light);
+}
+
+.vstyle-background-app { /* Used in internal app page base view */
+    background: linear-gradient( to bottom, var(--color-support-lightest), var(--color-main-lightest));
+    /* background-color: var(--color-background); */
+    color: var(--color-text-light);
+}
+
+/* App colors */
+.vstyle-light {
+    background-color: var(--color-light);
+    color: var(--color-text-dark);
+}
+
+.vstyle-dark {
+    background-color: var(--color-dark);
+    color: var(--color-text-light);
+}
+
+.vstyle-negative {
+    background-color: var(--color-negative);
+    color: var(--color-text-light);
+}
+
+.vstyle-main {
+    background-color: var(--color-main-darker);
+    color: var(--color-text-light);
+}
+
+.vicon-main {
+    color: var(--color-main-darker);
+}
+
+.vicon-pop {
+    color: var(--color-pop-darker);
+}
+
+.vstyle-pop {
+    background-color: var(--color-pop);
+    color: var(--color-main);
+}
+
+.vstyle-support {
+    color: var(--color-main-darker);
+    background-color: var(--color-support);
+    border-color: var(--color-support-light);
+}
+
+.vicon-negative {
+    color: var(--color-negative-dark);
+}
+
+.vstyle-main-dark{
+    background-color: var(--color-main-darker);
+    color: var(--color-text-light);
+}
+
+/* USER TYPE COLORS */
+.vstyle-nav { /* Guests' navigation style */
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--color-text-light);
+    transition: background-color .3s, opacity .5s;
+}
+.vstyle-nav-dark { /* Topbar is set to darker after scroll */
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.vstyle-footer {
+    position: relative;
+    background-color: var(--color-main-darkest);
+    color: var(--color-text-light);
+}
+
+.vstyle-body {
+    background-color: var(--color-main-darker);
+    color: var(--color-text-light);
+}
+
+.vstyle-admin { /* Administrators' style */
+    background-color: var(--color-admin);
+    color: var(--color-text-light);
+}
+
+.vstyle-admin-nav { /* Administrators' navigation style */
+    background-color: var(--color-admin);
+    color: var(--color-text-light);
+}
+
+.vstyle-res { /* Researchers' style */
+    background-color: var(--color-res);
+    color: var(--color-text-light);
+}
+.vstyle-res-nav { /* Researchers' navigation style */
+    background-color: var(--color-res);
+    color: var(--color-text-light);
+}
+
+
+.vstyle-doc { /* Medical professionals' (Doctors') style */
+    background-color: var(--color-doc);
+    color: var(--color-text-light);
+}
+.vstyle-doc-nav { /* Medical professionals' navigation style */
+    background-color: var(--color-doc);
+    color: var(--color-text-light);
+}
+.vicon-doc {
+    color: var(--color-doc);
+}
+
+
+.vstyle-care {  /* Caregivers' style */
+    background-color: var(--color-care);
+    color: var(--color-text-light);
+}
+.vstyle-care-nav { /* Caregivers' navigation style */
+    background-color: var(--color-care);
+    color: var(--color-text-light);
+}
+
+
+.vstyle-org {  /* Organizations' style */
+    background-color: var(--color-org);
+    color: var(--color-text-light);
+}
+.vstyle-org-nav { /* Organiations' navigation style */
+    background-color: var(--color-org);
+    color: var(--color-text-light);
+}
+.vicon-org {
+    color: var(--color-org);
+}
+
+
+
+/* TEXT (Must be after defining app base styles)
+AND MUST be before specific text color classes */
+.vpg-title { /* Main Page Title */
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 8vw;
+    text-transform: uppercase;
+    color: var(--color-main-darkest);
+    word-break: break-word;
+}
+
+.vpg-title span {
+    font-weight: 700;
+}
+
+@media (min-width: 576px) {
+    .vpg-title { /* Main Page Title size adaptation */
+        font-size: 2.8rem;
+    }
+}
+
+.vpg-subtitle { /* Page Subtitles */
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 6vw;
+    text-transform: uppercase;
+    color: var(--color-main-darkest);
+    word-break: break-word;
+}
+
+.vpg-subtitle span {
+    font-weight: 700;
+}
+
+@media (min-width: 576px) {
+    .vpg-subtitle { /* Page Subtitles size adaptation */
+        font-size: 2.4rem;
+    }
+}
+
+.vpg-desc { /* Title Descriptions */
+    font-family: 'Roboto', Georgia, sans-serif;
+    font-weight: 500;
+    font-size: 5vw;
+    color: var(--color-main-darker);
+    margin-bottom: 40px;
+    word-break: break-word;
+}
+
+@media (min-width: 576px) {
+    .vpg-desc { /* Title Descriptions size adaptation */
+        font-size: 1.4rem;
+    }
+}
+
+.font-api-docs {
+    font-size: small;
+}
+
+.vtext-clear {
+    color: var(--color-clear);
+}
+
+.vtext-dim {
+    color: var(--color-text-dim);
+}
+
+.vtext-shadow {
+    text-shadow: 2px 2px 8px var(--color-main)
+}
+
+.vtext-light {
+    color: var(--color-text-light);
+}
+
+.vtext-dark {
+    color: var(--color-text-dark);
+}
+
+.vtext-main {
+    color: var(--color-main-darkest);
+}
+
+.vtext-pop {
+    color: var(--color-pop-dark);
+}
+
+.vtext-attention {
+    color: var(--color-attention);
+}
+
+.vtext-dark-gray {
+    color: var(--color-partner-list-gray-colorize);
+}
+
+
+
+
+
+/* FUNCTIONAL COMPONENTS */
+.col-vcenter {
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+/* should be versatile for all element types */
+.vdisabled {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+    /* Disables mouse interaction */
+}
+
+
+/* STYLIZED COMPONENTS */
+.vphoto {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+
+
+/* ANIMATIONS */
+.hidden-on-right {
+    right: -100%;
+    position: relative;
+}
+
+@keyframes anim-slide-from-right {
+    0% {right: -100%;}
+    100% {right: 0%;}
+}
+
+.slide-from-right {
+    animation-name: anim-slide-from-right;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    right: 0%;
+}
+
+.hidden-on-left {
+    left: -100%;
+    position: relative;
+}
+
+@keyframes anim-slide-from-left {
+    0% {left: -100%;}
+    100% {left: 0%;}
+}
+
+.slide-from-left {
+    animation-name: anim-slide-from-left;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    left: 0%;
+}
+
+/* COMPONENT STYLING */
+.carousel .carousel-indicators .indicator-rounded { /* BOOTSRAP'S CAROUSEL: Rounded carousel indicators */
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carousel-caption.centered-caption { /* BOOTSRAP'S CAROUSEL: Positioning carousel text on top of slides */
+    max-width: 80%;
+    max-height: 92vh;
+    margin: 0 auto;
+    text-align:center;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    top: 0px;
+    text-overflow: wrap;
+}
+
+.carousel-item img.centered-image {
+      left: 50%;
+      position: relative;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+}
+
+/* Text links */
+a.vtxt-link:link,
+a.vtxt-link:visited,
+a.vtxt-link:active {
+  color: var(--color-text-lightest);
+}
+
+a.vtxt-link:hover {
+  color: var(--color-pop-lighter);
+}
+
+a.vtxt-link-light:link,
+a.vtxt-link-light:visited,
+a.vtxt-link-light:active {
+  color: var(--color-pop-lighter);
+}
+
+a.vtxt-link-light:hover {
+  color: var(--color-pop-lightest);
+}
+
+/* CUSTOM NAV PILLS */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: var(--color-pop-lightest);
+    background-color: rgba(0,0,0,0);
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+body { /* Colors in Firefox */
+    scrollbar-color: var(--color-main-lighter) var(--color-support-lighter);
+    scrollbar-width: thin !important;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-support-lighter);
+    opacity: 2;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-main-lighter);
+    background-color: var(--color-main-lighter);
+    outline: 1px solid var(--color-main-light);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-main-light);
+    background-color: var(--color-main-light);
+    outline: 1px solid var(--color-main-dark);
+}
+
+/* ALERTS */
+.notice h4 { /* Text style for alerts */
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.notice p { /* Text style for alerts */
+    font-family: 'Roboto', Georgia, sans-serif;
+    font-weight: 400;
+}
+
+.alert-main {
+    color: var(--color-text-light);
+    background-color: var(--color-main-dark);
+    border-color: var(--color-main-light);
+}
+
+.alert-vdark {
+    color: var(--color-text-light);
+    background-color: var(--color-main-darkest);
+    border-color: var(--color-main-darker);
+    box-shadow: 0 1px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.alert-main hr,
+.alert-vdark hr {
+    border-top-color: var(--color-text-light);
+}
+
+.alert-main .alert-link,
+.alert-vdark .alert-link {
+    color: var(--color-text-light);
+}
+
+.alert-code { /* Alert to display code */
+    color: #383d41;
+    background-color: #e9e9e9;
+    border-color: #d6d8db;
+    font-family: 'Source Code Pro';
+}
+
+.alert-code hr {
+    border-top-color: #c8cbcf;
+}
+
+.alert-code .alert-link {
+    color: #202326;
+}
+
+/* BORDERS */
+.border-main {
+    border-color: var(--color-main-lighter);
+}
+
+/* PROJECT COMPONENTS */
+.vcard-canvas {
+    font-family: 'Roboto', Georgia, sans-serif;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: var(--color-light);
+    border-radius: 5px;
+    box-shadow: 0 1px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 576px) {
+    .vcard-canvas {
+        padding: 40px;
+    }
+}
+
+.vcard-img {
+    min-height: 80px;
+    max-height: 100px;
+}
+
+@media (min-width: 576px) {
+    .vcard-img {
+        height: 180px;
+    }
+}
+
+.vbtn-clear { /* To be used with bootstrap's btn class. I.e: <button type="button" class="btn vbtn-clear">Clear btn</button> */
+    color: var(--color-clear);
+    background-color: rgba(0,0,0,0);
+    border: 3px solid var(--color-clear);
+}
+
+.vbtn-clear:hover {
+    color: var(--color-light);
+    background-color: rgba(0,0,0,0);
+    border: 3px solid var(--color-light);
+}
+
+.vbtn-main {
+    color: var(--color-text-light);
+    background-color: var(--color-main-darker);
+    border: 1px solid var(--color-main-dark);
+}
+
+.vbtn-main:hover {
+    color: var(--color-text-light);
+    background-color: var(--color-main-dark);
+    border: 1px solid var(--color-main-dark);
+}
+
+.vbtn-main:focus, .vbtn-main.focus {
+    box-shadow: 0 0 0 0.2rem rgba(35, 104, 162, 0.25);
+}
+
+.vbtn-pop {
+    color: var(--color-light);
+    background-color: var(--color-pop-darker);
+    border: 1px solid var(--color-pop-dark);
+}
+
+.vbtn-pop:hover {
+    color: var(--color-light);
+    background-color: var(--color-pop-dark);
+    border: 1px solid var(--color-pop-dark);
+}
+
+.vbtn-pop:focus, .vbtn-main.focus {
+    box-shadow: 0 0 0 0.2rem rgba(56, 34, 127, 0.25); /* NOTE: Color does not display transparency if used in var() */
+}
+
+.vbtn-support {
+    color: var(--color-support-dark);
+    background-color: var(--color-support-lighter);
+    border: 1px solid var(--color-support-lighter);
+}
+
+.vbtn-support:hover {
+    color: var(--color-support-dark);
+    background-color: var(--color-support-light);
+    border: 1px solid var(--color-support-light);
+}
+
+.vbtn-support:focus, .vbtn-support.focus {
+    box-shadow: 0 0 0 0.2rem var(--color-support-lighter);
+}
+
+.vbtn-negative {
+    color: var(--color-text-light);
+    background-color: var(--color-negative-dark);
+    border-color: var(--color-negative-dark);
+}
+
+.vbtn-negative:hover {
+    color: var(--color-text-light);
+    background-color: var(--color-negative);
+    border-color: var(--color-negative);
+}
+
+.vbtn-negative:focus, .vbtn-negative.focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5); /* NOTE: Color does not display transparency if used in var() */
+}
+
+.vbtn-large{
+    min-width:180px;
+    padding: .5rem 2rem .5rem 2rem;
+    font-size:15pt;
+}
+
+
+.btn-link {
+    color: var(--color-main);
+}
+
+.btn-link:hover {
+    color: var(--color-main-light);
+}
+
+.btn-pop { /* Button with pop-out colors */
+    color: var(--color-text-dark);
+    background-color: var(--color-pop);
+    border-color: var(--color-pop);
+}
+
+.btn-pop:hover {
+    color: var(--color-text-dark);
+    background-color: var(--color-pop-light);
+    border-color: var(--color-pop-light);
+}
+
+.btn-pop:focus, .btn-pop.focus {
+    box-shadow: 0 0 0 0.2rem var(--color-pop-transparent);
+}
+
+.btn-pop.disabled, .btn-pop:disabled {
+    color: var(--color-text-dark);
+    background-color: var(--color-pop);
+    border-color: var(--color-pop);
+}
+
+.btn-pop:not(:disabled):not(.disabled):active, .btn-pop:not(:disabled):not(.disabled).active,
+.show > .btn-pop.dropdown-toggle {
+    color: var(--color-text-dark);
+    background-color: var(--color-pop-dark);
+    border-color: var(--color-pop-dark);
+}
+
+.btn-pop:not(:disabled):not(.disabled):active:focus, .btn-pop:not(:disabled):not(.disabled).active:focus,
+.show > .btn-pop.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem var(--color-pop-transparent);
+}
+
+/* Fixed background image */
+.img-bg-fixed {
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    width: 300%;
+    height: auto;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .img-bg-fixed {
+        left: -50%;
+        width: 200%;
+    }
+}
+
+@media (min-width: 768px) {
+    .img-bg-fixed {
+        left: 0px;
+        width: 100%;
+    }
+}
+
+/* Icon box */
+.vico-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    min-width: 220px;
+    padding: 50px 0 0;
+    border-radius: 5px;
+    text-align: center;
+    background: var(--color-light);
+    box-shadow: 0 1px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.vico-box-ico {
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    padding: 10px;
+    height: auto;
+}
+
+.vico-box-img {
+    position: relative;
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background: var(--color-light);
+    padding: 6px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vico-box-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.vico-box-title {
+    font-family: 'Roboto', Georgia, sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-top: 10px;
+    margin: 5px 0;
+}
+
+.vico-box-text {
+    padding: 0 10px;
+    font-size: 90%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.vico-box-text p {
+    font-family: 'Roboto', Georgia, sans-serif;
+    font-weight: 300;
+}
+
+/* Horizontal icon card */
+.vicon-card {
+    border-radius: 0.1em;
+    box-shadow: 0px 0px 10px 0px #888;
+    background: var(--color-light);
+    height: auto;
+    min-width: 240px;
+    height: 90%;
+    padding-right: 20px;
+}
+
+.vicon-card-body {
+    margin-top: 20px;
+}
+
+.vicon-card img {
+    width: 50px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.vicon-card h5 {
+    font-family: 'Roboto', Georgia, sans-serif;
+    font-weight: 400;
+}
+
+.vicon-card p {
+    font-family: 'Roboto', Georgia, sans-serif;
+    font-weight: 300;
+}
+
+
+
+/* Bootstrap Custom Checkbox / Radio Button / Switch Override
+Usage Ex:
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="customCheck1">
+        <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+    </div>
+*/
+.custom-control-label {
+    cursor: pointer;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: var(--color-ui-on);
+}
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: var(--color-ui-on);
+}
+
+/* NOTE: Checkbox and radio button visual upgrade */
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(56, 34, 127, 0.25);
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    border-color: var(--color-main-light);
+}
+
+/* NOTE: generic form input upgrade */
+.form-control:focus {
+    border-color: var(--color-main-light);
+    box-shadow: 0 0 0 0.2rem rgba(56, 34, 127, 0.25);
+}
+
+/* Font-Awesome icons inside bootstrap tabs */
+.nav-link {
+    color: var(--color-main-dark);
+}
+.nav-link.active i {
+    color: var(--color-main-lighter);
+}
+.nav-link:hover {
+    color: var(--color-main-lighter);
+}
+
+/* List items */
+.list-group-item.active {
+    background-color: var(--color-main-light);
+    color: var(--color-text-light);
+    border-color: var(--color-main-light);
+}
+
+.list-group-item.dark {
+    background-color: var(--color-transparent);
+    border-color: var(--color-support-light);
+}
+
+/* Menu items */
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--color-text-light);
+    text-decoration: none;
+    background-color: var(--color-main-dark);
+  }
+
+/* Cards */
+.vhover-card:hover {
+    cursor: pointer;
+    background-color: var(--color-light);
+}
+
+/* BADGES */
+.vbadge {
+    border-radius: 50%;
+    background-color: var(--color-support);
+    color: var(--color-text-light);
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    font-size: 10pt;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+}
+
+.vbadge-empty {
+    border-radius: 50%;
+    background-color: var(--color-light-ui);
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    font-size: 10pt;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+}
+
+/* Dashboard block */
+.vdashboard-item {
+    width: 120px;
+    height: 120px;
+    border: 1px solid var(--color-light-ui);
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+
+    border-color: var(--color-main);
+    color: var(--color-main);
+
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+}
+
+.vdashboard-item:hover,
+.vdashboard-item:focus,
+.vdashboard-item:active {
+    background-color: var(--color-clear);
+
+    border-color: var(--color-ui-on);
+    color: var(--color-ui-on);
+
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+
+}
+
+  /* charts */
+  .x-axis-ts-label {
+    font-size: 8pt;
+    font-weight: 300;
+    color: var(--color-support);
+}
+
+.chart-title {
+    font-size: 12pt;
+    color: var(--color-text-dark);
+    font-family: 'Gilroy', sans-serif !important;
+}

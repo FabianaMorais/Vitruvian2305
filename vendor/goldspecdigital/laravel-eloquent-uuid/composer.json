@@ -1,0 +1,51 @@
+{
+    "name": "goldspecdigital/laravel-eloquent-uuid",
+    "description": "A simple drop-in solution for providing UUID support for the IDs of your Eloquent models.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "laravel",
+        "eloquent",
+        "uuid"
+    ],
+    "homepage": "https://github.com/goldspecdigital/laravel-eloquent-uuid",
+    "authors": [
+        {
+            "name": "Matthew Inamdar",
+            "email": "matt@goldspecdigital.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "GoldSpecDigital\\LaravelEloquentUUID\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GoldSpecDigital\\LaravelEloquentUUID\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10.0"
+    },
+    "require-dev": {
+        "ext-pdo": "*",
+        "orchestra/testbench": "^8.0",
+        "phpunit/phpunit": "^10.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GoldSpecDigital\\LaravelEloquentUUID\\UuidServiceProvider"
+            ]
+        }
+    }
+}

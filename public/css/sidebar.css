@@ -1,0 +1,115 @@
+.sidebar-canvas {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.sidebar-area { /* Left spacer for the sidebar icons */
+    transition: all 0.3s;
+    width: 60px;
+}
+
+.content-area { /* page content, right of the sidebar */
+    width: 100%;
+}
+
+.sidebar-mobile-menu {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 998; /* Under sidebar */
+    font-size: xx-large; /* For font awesome icons */
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    width: 60px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow-x: hidden;
+    transition: all 0.3s;
+}
+
+.sidebar-area:hover .sidebar { /* User hovers over the sidebar, so we expand it */
+    width: 300px;
+    max-width: 80vw;
+}
+
+.sidebar-option {
+    width: 300px;
+    max-width: 80vw;
+    display: flex;
+    flex-direction: row;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0); ;
+
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+
+.sidebar-option:hover {
+    color: #E3E7EA;
+    background-color: rgba(255, 255, 255, 0.2); /* Lighting up */
+}
+
+.sidebar-option.inactive {
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.sidebar-opt-ico {
+    width: 60px; /* Same width as the side bar when closed */
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: x-large; /* For font awesome icons */
+}
+
+.sidebar-opt-txt {
+    width: calc(100% - 60px);
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align: left;
+    font-size: medium;
+}
+
+.sidebar-header-txt {
+    width: calc(100% - 60px);
+    text-align: left;
+}
+
+.sidebar-spacer {
+    height: 60px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0); ;
+}
+
+@media (max-width: 768px) { /* MOBILE */
+
+    .sidebar-area { /* In mobile, we do not show the sidebar */
+        width: 0px;
+    }
+
+    .sidebar { /* So we have to hide it all on the left */
+        width: 0px;
+    }
+    .sidebar.active { /* And fully show it when called */
+        width: 300px;
+        max-width: 80vw;
+    }
+}

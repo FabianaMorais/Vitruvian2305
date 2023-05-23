@@ -1,0 +1,170 @@
+/*---------------*/
+/* Concept Cards */
+/*---------------*/
+.card-concept {
+    list-style: none;
+    text-align: center;
+}
+
+.card-concept h2 {
+    font-family: 'Raleway', Arial, sans-serif !important;
+}
+
+.card-concept figure {
+    position: relative;
+    overflow: hidden;
+    max-width: 320px;
+    height: 320px;;
+    text-align: center;
+    margin: auto;
+
+    min-width: 280px;
+}
+
+.card-concept figure img {
+    position: relative;
+    display: block;
+    opacity: 0.8;
+
+	max-height: 280px;
+	max-width: 280px;
+	width: auto;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card-concept figure a,
+.card-concept figure figcaption {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card-concept figure figcaption {
+    padding: 2em;
+}
+
+.card-concept figure a {
+	margin-top: 20px;
+	margin-left: auto; /* Margins so link only works on the text itself */
+	margin-right: auto;
+}
+
+.card-concept figure figcaption::before,
+.card-concept figure figcaption::after {
+    pointer-events: none;
+}
+
+.card-concept figure figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-concept figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.card-concept figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.card-concept figure h2 span {
+    font-weight: 800;
+}
+
+.card-concept figure h2,
+.card-concept figure p {
+    margin: 0;
+}
+
+.card-concept figure a,
+.card-concept figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+figure.effect-square img {
+    opacity: 0.9;
+    -webkit-transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, transform 1s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: 20px;
+}
+
+figure.effect-square figcaption::before {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    border: 2px solid #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale3d(1.4,1.4,1);
+    transform: scale3d(1.4,1.4,1);
+}
+
+figure.effect-square h2 {
+    position: absolute;
+    margin: 68% 0 10px 3px;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+}
+
+figure.effect-square a,
+figure.effect-square p {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+figure.effect-square:hover h2 {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.effect-square:hover figcaption::before,
+figure.effect-square:hover a,
+figure.effect-square:hover p {
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+
+figure.effect-square:hover figcaption {
+    background-color: rgba(32, 61, 84, 0.3);
+}
+
+figure.effect-square:hover img {
+    opacity: 0.4;
+    -webkit-transform: scale3d(1.1,1.1,1);
+    transform: scale3d(1.1,1.1,1);
+}
+
+figure.effect-square .text-box {
+    height: 100%;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+}
+
+figure.effect-square:hover .text-box {
+    background: rgba(35, 104, 162, 0.5);
+}

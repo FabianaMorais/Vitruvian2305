@@ -1,0 +1,165 @@
+.card-target {
+    position: relative;
+    list-style: none;
+    text-align: center;
+    height: auto;
+    max-width: 446px;
+    min-width: 280px;
+}
+
+.card-target h2 {
+    font-family: 'Raleway', Arial, sans-serif !important;
+}
+
+/* Common style */
+.card-target figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-target figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.card-target figure figcaption {
+    padding: 2em;
+    color:var(--color-text-light);
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card-target figure figcaption::before,
+.card-target figure figcaption::after {
+    pointer-events: none;
+}
+
+.card-target figure figcaption,
+.card-target figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.card-target figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.card-target figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.card-target figure h2 span {
+    font-weight: 800;
+}
+
+.card-target figure h2,
+.card-target figure p {
+    margin: 0;
+}
+
+.card-target h2 {
+    font-size: 1.0rem;
+}
+
+/* Changing text size to text always fits */
+.card-target figure p {
+    font-size: 0.5rem;
+    right: 40px;
+    left: 40px;
+    bottom: 40px;
+}
+
+@media (min-width: 350px) {
+    .card-target figure p {
+        font-size: 0.6rem;
+    }
+}
+
+@media (min-width: 449px) {
+    .card-target h2 {
+        font-size: 1.8rem;
+    }
+
+    .card-target figure p {
+        letter-spacing: 1px;
+        font-size: 68.5%;
+
+        right: 60px;
+        bottom: 60px;
+        left: 60px;
+    }
+}
+
+figure.effect-dexter {
+    background: -webkit-linear-gradient(top, var(--color-main-lightest) 0%, var(--color-main-darkest) 100%);
+    background: linear-gradient(to bottom,  var(--color-main-lightest) 0%, var(--color-main-darkest) 100%);
+}
+
+figure.effect-dexter img {
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.effect-dexter:hover img {
+    opacity: 0.4;
+}
+
+figure.effect-dexter figcaption::after {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    height: -webkit-calc(50% - 30px);
+    height: calc(50% - 30px);
+    border: 7px solid var(--color-text-light);
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+}
+
+figure.effect-dexter:hover figcaption::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.effect-dexter figcaption {
+    padding: 3em;
+    text-align: left;
+}
+
+figure.effect-dexter p {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,-100px,0);
+    transform: translate3d(0,-100px,0);
+}
+
+figure.effect-dexter:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}

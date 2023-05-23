@@ -1,0 +1,23 @@
+{
+    "name": "bjori/phongo-crud",
+    "description": "MongoDB CRUD interface for PHongo",
+    "require": {
+        "ext-phongo": ">=0.1.2"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.0"
+    },
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Hannes Magnusson",
+            "email": "bjori@mongodb.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "MongoDB\\": "src/"
+        }
+    }
+}

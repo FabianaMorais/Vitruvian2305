@@ -1,0 +1,15 @@
+.left-side-border{
+    border-left:3px solid var(--color-main);
+    box-shadow: 1px 1px 3px;
+}
+
+.card-container-collapse{
+    overflow-y: scroll; 
+    max-height:120px;
+}
+
+.collapse-content-resize{
+    width:95%; 
+    margin-left:2.5%;
+   
+}
